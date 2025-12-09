@@ -1,0 +1,161 @@
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #0f172a;
+  background-color: #f8fafc;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #e0f2fe 0%, #ffedd5 100%);
+  color: inherit;
+}
+
+.app-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px 64px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: clamp(2rem, 3vw + 1rem, 3rem);
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #ea580c;
+  margin: 0 0 20px;
+  font-weight: 600;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.search-input {
+  width: min(420px, 100%);
+  padding: 12px 14px;
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  font-size: 1rem;
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.06);
+}
+
+.content-grid {
+  display: grid;
+  gap: 28px;
+  margin-top: 28px;
+}
+
+@media (min-width: 900px) {
+  .content-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #1d4ed8;
+}
+
+.section-heading .count {
+  background: #e0f2fe;
+  color: #1d4ed8;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.card-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #bfdbfe;
+  border-radius: 14px;
+  text-align: left;
+  padding: 16px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.07);
+}
+
+.card h3 {
+  margin: 0 0 6px;
+  color: #1d4ed8;
+}
+
+.card p {
+  margin: 0;
+  color: #475569;
+}
+
+.card-orange {
+  border-color: #fdba74;
+}
+
+.card-orange h3 {
+  color: #c2410c;
+}
+
+.muted {
+  color: #475569;
+}
+
+.error-text {
+  color: #b91c1c;
+  margin: 12px 0;
+}
+
+.actions {
+  margin-top: 32px;
+}
+
+.primary-button {
+  background: #f97316;
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 12px 40px rgba(249, 115, 22, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.primary-button:hover {
+  transform: translateY(-1px);
+  background: #ea580c;
+  box-shadow: 0 16px 40px rgba(234, 88, 12, 0.35);
+}
+
+.primary-button:active {
+  transform: translateY(0);
+  box-shadow: 0 10px 30px rgba(234, 88, 12, 0.25);
+}
