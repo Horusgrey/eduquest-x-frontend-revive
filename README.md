@@ -7,22 +7,22 @@ A lightweight React + Vite frontend for browsing EduQuest courses and jobs.
 2. Install dependencies: `npm install`.
 3. Run the dev server: `npm run dev` then open the printed URL (default http://localhost:5173).
 
-## Plain-English handoff (copy/paste this for helpers)
-1. This is a simple website built with React/Vite; the editable code is in `src/`.
-2. To view it locally: `npm install`, then `npm run dev`, then open the link it prints.
-3. To produce the files you upload: run `npm run build` (creates a `dist/` folder).
-4. To put it on odin.it.com: upload everything **inside `dist/`** to your Odin web root. Keep the `public/_redirects` file so every page loads.
-5. If you change anything: run `npm run build` again, then re-upload the fresh `dist/` contents.
+## Copy/paste handoff (no jargon)
+1) This site lives in the `src/` folder and is built with React/Vite.
+2) To see it locally: run `npm install`, then `npm run dev`, then open the link it prints.
+3) To prepare the files you upload: run `npm run build` (it fills the `dist/` folder).
+4) To put it on odin.it.com: upload everything **inside `dist/`** to your Odin web root. Keep the `_redirects` file beside `index.html`.
+5) If you change anything: run `npm run build` again and re-upload the fresh `dist/` contents.
 
-## One-by-one odin.it.com deployment (non-coder version)
-1. Install Node 18+ (or ask someone to do this once). 
-2. Open a terminal in this project folder.
-3. Run `npm install`.
-4. Run `npm run build` (this fills the `dist/` folder with the site files).
-5. Connect to your Odin hosting (SFTP/SSH or file manager).
-6. Upload everything **inside** `dist/` to your Odin web root.
-7. Make sure the `_redirects` file sits next to `index.html` on Odin.
-8. Visit odin.it.com in your browser; if you don’t see changes, refresh and clear cache.
+## Odin.it.com upload checklist (one-by-one)
+1) Install Node 18+ (ask a helper once if needed).
+2) Open a terminal in this project folder.
+3) Run `npm install`.
+4) Run `npm run build` (creates the `dist/` folder).
+5) Connect to Odin hosting (SFTP/SSH or file manager).
+6) Upload everything **inside** `dist/` to your Odin web root.
+7) Put `_redirects` next to `index.html` on Odin (keeps all routes working).
+8) Open odin.it.com; if you don’t see updates, hard-refresh/clear cache and reload.
 
 ## Production build
 1. Build optimized assets: `npm run build` (output goes to `dist/`).
