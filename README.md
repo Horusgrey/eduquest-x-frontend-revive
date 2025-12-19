@@ -7,12 +7,22 @@ A lightweight React + Vite frontend for browsing EduQuest courses and jobs.
 2. Install dependencies: `npm install`.
 3. Run the dev server: `npm run dev` then open the printed URL (default http://localhost:5173).
 
-## Plain-English handoff (give this to anyone helping you)
-1. The site is a React single-page app built with Vite. All code lives in `src/`.
-2. To see it locally, run `npm install` then `npm run dev` and open the link it prints.
-3. To make the production files, run `npm run build` (this creates a `dist/` folder).
-4. For odin.it.com, upload everything inside `dist/` to your Odin web root and keep the `public/_redirects` file so all routes work.
-5. If something breaks, run `npm run build` again after any changes and re-upload the new `dist/` contents.
+## Plain-English handoff (copy/paste this for helpers)
+1. This is a simple website built with React/Vite; the editable code is in `src/`.
+2. To view it locally: `npm install`, then `npm run dev`, then open the link it prints.
+3. To produce the files you upload: run `npm run build` (creates a `dist/` folder).
+4. To put it on odin.it.com: upload everything **inside `dist/`** to your Odin web root. Keep the `public/_redirects` file so every page loads.
+5. If you change anything: run `npm run build` again, then re-upload the fresh `dist/` contents.
+
+## One-by-one odin.it.com deployment (non-coder version)
+1. Install Node 18+ (or ask someone to do this once). 
+2. Open a terminal in this project folder.
+3. Run `npm install`.
+4. Run `npm run build` (this fills the `dist/` folder with the site files).
+5. Connect to your Odin hosting (SFTP/SSH or file manager).
+6. Upload everything **inside** `dist/` to your Odin web root.
+7. Make sure the `_redirects` file sits next to `index.html` on Odin.
+8. Visit odin.it.com in your browser; if you don’t see changes, refresh and clear cache.
 
 ## Production build
 1. Build optimized assets: `npm run build` (output goes to `dist/`).
